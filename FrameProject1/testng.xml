@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="restassuredtestsuite">
+
+
+
+<listeners>
+<listener class-name="com.employeeapi.utilities.Listeners"/>
+</listeners>
+<test thread-count="5" name="EmployeesRestAPITest">
+
+<classes>
+<class name="PageObject.TC001_GET_All_Employees"/>
+<class name="PageObject.TC002_GET_Single_Employee"/>
+<class name="PageObject.TC003_POST_Employee_Record"/>
+<class name="PageObject.TC004_PUT_Update_Record"/>
+<class name="PageObject.TC005_Delete_Record"/>
+</classes>
+</test>
+</suite>

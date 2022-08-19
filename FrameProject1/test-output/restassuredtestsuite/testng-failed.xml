@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [restassuredtestsuite]">
+  <listeners>
+    <listener class-name="com.employeeapi.utilities.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="EmployeesRestAPITest(failed)">
+    <classes>
+      <class name="PageObject.TC003_POST_Employee_Record">
+        <methods>
+          <include name="setup"/>
+          <include name="createEmployee"/>
+          <include name="checkContentEncoding"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- PageObject.TC003_POST_Employee_Record -->
+      <class name="PageObject.TC005_Delete_Record">
+        <methods>
+          <include name="deleteEmployee"/>
+          <include name="tearDown"/>
+          <include name="checkResponseBody"/>
+          <include name="setup"/>
+          <include name="checkStatusCode"/>
+        </methods>
+      </class> <!-- PageObject.TC005_Delete_Record -->
+      <class name="PageObject.TC001_GET_All_Employees">
+        <methods>
+          <include name="checkContentLength"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="getAllEmployees"/>
+          <include name="checkResponseTime"/>
+        </methods>
+      </class> <!-- PageObject.TC001_GET_All_Employees -->
+      <class name="PageObject.TC002_GET_Single_Employee">
+        <methods>
+          <include name="setup"/>
+          <include name="checkContentLength"/>
+          <include name="getAllEmployees"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- PageObject.TC002_GET_Single_Employee -->
+      <class name="PageObject.TC004_PUT_Update_Record">
+        <methods>
+          <include name="setup"/>
+          <include name="checkResponseBody"/>
+          <include name="checkStatusCode"/>
+          <include name="updateEmployee"/>
+          <include name="checkContentType"/>
+          <include name="tearDown"/>
+          <include name="checkStatusLine"/>
+        </methods>
+      </class> <!-- PageObject.TC004_PUT_Update_Record -->
+    </classes>
+  </test> <!-- EmployeesRestAPITest(failed) -->
+</suite> <!-- Failed suite [restassuredtestsuite] -->
